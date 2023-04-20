@@ -1,0 +1,21 @@
+html{
+    overflow-x: hidden;
+}
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.container-sm {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.slider-image {
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
