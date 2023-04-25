@@ -4,6 +4,8 @@ import { MenuProvider } from "./components/MenuContext";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Aboutus from "./pages/Aboutus";
+import SinglePage from "./pages/SinglePage";
+import Error from "./pages/Error";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<Aboutus />} />
+          <Route path="*" element={<Error />} />
+          <Route path="/:id" element={<SinglePage />} />
         </Routes>
       </MenuProvider>
     </div>

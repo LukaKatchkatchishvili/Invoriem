@@ -1,13 +1,14 @@
 import React, { useContext, useEffect } from "react";
 // import { Link } from "react-router-dom";
 import { MenuContext } from "../MenuContext";
-import { logo, arrowRight, menu,facebook,instagram,twitter,linkedin } from "../../data/data";
+import { logo, arrowRight, menu,facebook,instagram,twitter,linkedin } from "../../data/dataImgs";
 import "../../global.css";
 import "../Navbar/Navbar.css";
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   const { menuActive, setMenuActive } = useContext(MenuContext);
-  console.log(menuActive);
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth < 768 && menuActive) {
@@ -65,7 +66,7 @@ const Navbar = () => {
           </div>
       </div>
       <div className="logo p-5 z-10 block">
-        <img src={logo} alt="logo" className="md:w-auto w-24 z-50" />
+        <Link to={`/`}><img src={logo} alt="logo" className="md:w-auto w-24 z-50" /></Link>
       </div>
 
       <div className="menu block md:hidden z-10">

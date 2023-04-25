@@ -1,5 +1,5 @@
 import React from 'react';
-import { facebook,instagram,twitter,linkedin } from "../../data/data";
+import { facebook,instagram,twitter,linkedin } from "../../data/dataImgs";
 
 
 const footer = () => {

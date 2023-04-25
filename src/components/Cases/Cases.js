@@ -1,12 +1,12 @@
 import React from 'react';
 import "../../global.css";
-import {france, moroco, london, portugal} from "../../data/data";
+import {france, moroco, london, portugal} from "../../data/dataImgs";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Link } from "react-router-dom";
 
 const Cases = () => {
-
   const settings = {
   dots: false,
   infinite: false,
@@ -43,16 +43,16 @@ const Cases = () => {
       </div>
       <Slider {...settings} className="md:!mt-[75px] !mt-[35px]">
         <div className='mx-2'>
-          <img src={france} alt="france" />
+          <Link to={`/france`} target="_blank"><img src={france} alt="france"/></Link>
         </div>
         <div className='mx-2'>
-          <img src={moroco} alt="moroco"/>
+          <Link to={`/moroco`} target="_blank"><img src={moroco} alt="moroco"/></Link>
         </div>
         <div className='mx-2'>
-          <img src={london} alt="london"/>
+          <Link to={`/london`} target="_blank"><img src={london} alt="london"/></Link>
         </div>
         <div className='mx-2'>
-          <img src={portugal} alt="portugal"/>
+          <Link to={`/portugal`} target="_blank"><img src={portugal} alt="portugal"/></Link>
         </div>
       </Slider>
     </section>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {PinkFloyd} from "../../data/data";
+import {PinkFloyd} from "../../data/dataImgs";
 
 const HomeVideo = () => {
   return (

@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
-import { HomeBg, HomeBgMd, logo, arrowRightWhite } from "../data/data.js";
+import { HomeBg, HomeBgMd, logo, arrowRightWhite } from "../data/dataImgs.js";
 import { MenuContext } from "../components/MenuContext";
 import Cases from "../components/Cases/Cases";
 import HomeVideo from "../components/HomeVideo/HomeVideo.js";
 import Footer from "../components/Footer/Footer.js";
 import "../global.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const { menuActive } = useContext(MenuContext);
@@ -26,7 +27,7 @@ const Home = () => {
             menuActive ? "z-1" : "-z-10"
           }`}
         >
-          <img src={logo} alt="logo" className="w-60 mx-auto" />
+          <Link to={`/`}><img src={logo} alt="logo" className="w-60 mx-auto" /></Link>
           <p className="text-center text-[1.15rem] text-slate-500 mt-7">
             We fulfill international property developments
           </p>

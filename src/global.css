@@ -19,3 +19,6 @@ html{
     background-position: center;
     background-size: cover;
 }
+.active{
+    background: black;
+}
